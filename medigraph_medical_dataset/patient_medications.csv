@@ -1,0 +1,5 @@
+patient_id,medication_id,recorded_status
+P001,M003,Synthetic demo association; not a prescription
+P002,M002,Synthetic demo association; not a prescription
+P003,M004,Synthetic demo association; not a prescription
+P004,M001,Synthetic demo association; not a prescription

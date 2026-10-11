@@ -1,0 +1,5 @@
+medication_id,generic_name,ingredient_id,evidence_status
+M001,paracetamol,I001,Example medication record; not a recommendation
+M002,metformin,I002,Example medication record; not a recommendation
+M003,salbutamol,I003,Example medication record; not a recommendation
+M004,cetirizine,I004,Example medication record; not a recommendation

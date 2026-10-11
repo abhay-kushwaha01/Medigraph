@@ -1,0 +1,4 @@
+allergy_id,patient_id,allergen,reaction,evidence_status
+A001,P001,Pollen,Not specified,Synthetic demo record; reaction not clinically verified
+A002,P002,Not recorded,Not recorded,Synthetic demo record; no real allergy assertion
+A003,P003,Dust mite,Not specified,Synthetic demo record; reaction not clinically verified

@@ -1,0 +1,6 @@
+condition_id,name,category,evidence_status
+C001,Asthma,Respiratory,Reference terminology; not a diagnosis
+C002,Type 2 diabetes mellitus,Endocrine,Reference terminology; not a diagnosis
+C003,Hypertension,Cardiovascular,Reference terminology; not a diagnosis
+C004,Seasonal allergic rhinitis,Allergy/Immunology,Reference terminology; not a diagnosis
+C005,Migraine,Neurology,Reference terminology; not a diagnosis

@@ -1,0 +1,330 @@
+{
+  "dataset_name": "MediGraph AI synthetic demo dataset",
+  "synthetic_only": true,
+  "clinical_use": "Demonstration and software testing only. Not for clinical decisions.",
+  "nodes": [
+    {
+      "id": "P001",
+      "label": "P001",
+      "type": "Patient",
+      "properties": {
+        "ageGroup": "30-40",
+        "sex": "Not specified",
+        "notes": "Synthetic demo record"
+      }
+    },
+    {
+      "id": "P002",
+      "label": "P002",
+      "type": "Patient",
+      "properties": {
+        "ageGroup": "50-60",
+        "sex": "Not specified",
+        "notes": "Synthetic demo record"
+      }
+    },
+    {
+      "id": "P003",
+      "label": "P003",
+      "type": "Patient",
+      "properties": {
+        "ageGroup": "20-30",
+        "sex": "Not specified",
+        "notes": "Synthetic demo record"
+      }
+    },
+    {
+      "id": "P004",
+      "label": "P004",
+      "type": "Patient",
+      "properties": {
+        "ageGroup": "60-70",
+        "sex": "Not specified",
+        "notes": "Synthetic demo record"
+      }
+    },
+    {
+      "id": "C001",
+      "label": "Asthma",
+      "type": "Condition",
+      "properties": {
+        "category": "Respiratory",
+        "evidenceStatus": "Reference terminology; not a diagnosis"
+      }
+    },
+    {
+      "id": "C002",
+      "label": "Type 2 diabetes mellitus",
+      "type": "Condition",
+      "properties": {
+        "category": "Endocrine",
+        "evidenceStatus": "Reference terminology; not a diagnosis"
+      }
+    },
+    {
+      "id": "C003",
+      "label": "Hypertension",
+      "type": "Condition",
+      "properties": {
+        "category": "Cardiovascular",
+        "evidenceStatus": "Reference terminology; not a diagnosis"
+      }
+    },
+    {
+      "id": "C004",
+      "label": "Seasonal allergic rhinitis",
+      "type": "Condition",
+      "properties": {
+        "category": "Allergy/Immunology",
+        "evidenceStatus": "Reference terminology; not a diagnosis"
+      }
+    },
+    {
+      "id": "C005",
+      "label": "Migraine",
+      "type": "Condition",
+      "properties": {
+        "category": "Neurology",
+        "evidenceStatus": "Reference terminology; not a diagnosis"
+      }
+    },
+    {
+      "id": "M001",
+      "label": "paracetamol",
+      "type": "Medication",
+      "properties": {
+        "ingredientId": "I001",
+        "evidenceStatus": "Example medication record; not a recommendation"
+      }
+    },
+    {
+      "id": "M002",
+      "label": "metformin",
+      "type": "Medication",
+      "properties": {
+        "ingredientId": "I002",
+        "evidenceStatus": "Example medication record; not a recommendation"
+      }
+    },
+    {
+      "id": "M003",
+      "label": "salbutamol",
+      "type": "Medication",
+      "properties": {
+        "ingredientId": "I003",
+        "evidenceStatus": "Example medication record; not a recommendation"
+      }
+    },
+    {
+      "id": "M004",
+      "label": "cetirizine",
+      "type": "Medication",
+      "properties": {
+        "ingredientId": "I004",
+        "evidenceStatus": "Example medication record; not a recommendation"
+      }
+    },
+    {
+      "id": "A001",
+      "label": "Pollen",
+      "type": "Allergy",
+      "properties": {
+        "patientId": "P001",
+        "reaction": "Not specified",
+        "evidenceStatus": "Synthetic demo record; reaction not clinically verified"
+      }
+    },
+    {
+      "id": "A002",
+      "label": "Not recorded",
+      "type": "Allergy",
+      "properties": {
+        "patientId": "P002",
+        "reaction": "Not recorded",
+        "evidenceStatus": "Synthetic demo record; no real allergy assertion"
+      }
+    },
+    {
+      "id": "A003",
+      "label": "Dust mite",
+      "type": "Allergy",
+      "properties": {
+        "patientId": "P003",
+        "reaction": "Not specified",
+        "evidenceStatus": "Synthetic demo record; reaction not clinically verified"
+      }
+    },
+    {
+      "id": "I001",
+      "label": "paracetamol",
+      "type": "Ingredient",
+      "properties": {}
+    },
+    {
+      "id": "I002",
+      "label": "metformin",
+      "type": "Ingredient",
+      "properties": {}
+    },
+    {
+      "id": "I003",
+      "label": "salbutamol",
+      "type": "Ingredient",
+      "properties": {}
+    },
+    {
+      "id": "I004",
+      "label": "cetirizine",
+      "type": "Ingredient",
+      "properties": {}
+    },
+    {
+      "id": "S001",
+      "label": "Dataset documentation",
+      "type": "Source",
+      "properties": {
+        "publisher": "MediGraph AI synthetic demo dataset",
+        "url": "",
+        "evidenceStatus": "Internal metadata only"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "R_HAS_CONDITION_1",
+      "source": "P001",
+      "target": "C001",
+      "label": "HAS_CONDITION",
+      "properties": {
+        "status": "Synthetic demo association; not a real diagnosis"
+      }
+    },
+    {
+      "id": "R_HAS_CONDITION_2",
+      "source": "P002",
+      "target": "C002",
+      "label": "HAS_CONDITION",
+      "properties": {
+        "status": "Synthetic demo association; not a real diagnosis"
+      }
+    },
+    {
+      "id": "R_HAS_CONDITION_3",
+      "source": "P002",
+      "target": "C003",
+      "label": "HAS_CONDITION",
+      "properties": {
+        "status": "Synthetic demo association; not a real diagnosis"
+      }
+    },
+    {
+      "id": "R_HAS_CONDITION_4",
+      "source": "P003",
+      "target": "C004",
+      "label": "HAS_CONDITION",
+      "properties": {
+        "status": "Synthetic demo association; not a real diagnosis"
+      }
+    },
+    {
+      "id": "R_HAS_CONDITION_5",
+      "source": "P004",
+      "target": "C005",
+      "label": "HAS_CONDITION",
+      "properties": {
+        "status": "Synthetic demo association; not a real diagnosis"
+      }
+    },
+    {
+      "id": "R_TAKES_1",
+      "source": "P001",
+      "target": "M003",
+      "label": "TAKES",
+      "properties": {
+        "status": "Synthetic demo association; not a prescription"
+      }
+    },
+    {
+      "id": "R_TAKES_2",
+      "source": "P002",
+      "target": "M002",
+      "label": "TAKES",
+      "properties": {
+        "status": "Synthetic demo association; not a prescription"
+      }
+    },
+    {
+      "id": "R_TAKES_3",
+      "source": "P003",
+      "target": "M004",
+      "label": "TAKES",
+      "properties": {
+        "status": "Synthetic demo association; not a prescription"
+      }
+    },
+    {
+      "id": "R_TAKES_4",
+      "source": "P004",
+      "target": "M001",
+      "label": "TAKES",
+      "properties": {
+        "status": "Synthetic demo association; not a prescription"
+      }
+    },
+    {
+      "id": "R_CONTAINS_1",
+      "source": "M001",
+      "target": "I001",
+      "label": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "id": "R_CONTAINS_2",
+      "source": "M002",
+      "target": "I002",
+      "label": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "id": "R_CONTAINS_3",
+      "source": "M003",
+      "target": "I003",
+      "label": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "id": "R_CONTAINS_4",
+      "source": "M004",
+      "target": "I004",
+      "label": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "id": "R_HAS_ALLERGY_1",
+      "source": "P001",
+      "target": "A001",
+      "label": "HAS_ALLERGY",
+      "properties": {
+        "status": "Synthetic demo record; reaction not clinically verified"
+      }
+    },
+    {
+      "id": "R_HAS_ALLERGY_2",
+      "source": "P002",
+      "target": "A002",
+      "label": "HAS_ALLERGY",
+      "properties": {
+        "status": "Synthetic demo record; no real allergy assertion"
+      }
+    },
+    {
+      "id": "R_HAS_ALLERGY_3",
+      "source": "P003",
+      "target": "A003",
+      "label": "HAS_ALLERGY",
+      "properties": {
+        "status": "Synthetic demo record; reaction not clinically verified"
+      }
+    }
+  ]
+}

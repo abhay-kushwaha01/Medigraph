@@ -1,0 +1,5 @@
+medication_id,ingredient_id,ingredient_name
+M001,I001,paracetamol
+M002,I002,metformin
+M003,I003,salbutamol
+M004,I004,cetirizine

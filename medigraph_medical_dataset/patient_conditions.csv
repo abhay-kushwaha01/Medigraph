@@ -1,0 +1,6 @@
+patient_id,condition_id,recorded_status
+P001,C001,Synthetic demo association; not a real diagnosis
+P002,C002,Synthetic demo association; not a real diagnosis
+P002,C003,Synthetic demo association; not a real diagnosis
+P003,C004,Synthetic demo association; not a real diagnosis
+P004,C005,Synthetic demo association; not a real diagnosis

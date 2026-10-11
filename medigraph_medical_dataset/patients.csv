@@ -1,0 +1,5 @@
+patient_id,age_group,sex,notes
+P001,30-40,Not specified,Synthetic demo record
+P002,50-60,Not specified,Synthetic demo record
+P003,20-30,Not specified,Synthetic demo record
+P004,60-70,Not specified,Synthetic demo record
