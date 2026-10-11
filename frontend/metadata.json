@@ -1,0 +1,6 @@
+{
+  "name": "MediGraph AI",
+  "description": "Clinical knowledge graph analysis platform integrating with FastAPI and Neo4j for patient risk, drug interactions, and medical evidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
