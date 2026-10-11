@@ -1,0 +1,26 @@
+# MediGraph AI — Python dependencies
+# Pin exact versions for reproducibility.
+
+# ── Web framework ──────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# ── Settings / env ─────────────────────────────────────────────────────────
+pydantic==2.10.3
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# ── Neo4j ──────────────────────────────────────────────────────────────────
+neo4j==5.26.0
+
+# ── File parsing ───────────────────────────────────────────────────────────
+openpyxl==3.1.5          # .xlsx support
+xlrd==2.0.1              # legacy .xls support (read-only)
+pypdf==5.1.0             # text-based PDF extraction
+
+# ── Testing ────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.0            # async test client for FastAPI
+anyio==4.7.0
