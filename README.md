@@ -1,106 +1,99 @@
-- Synthetic patient records.
-- Medical condition labels.
-- Example medication records.
-- Allergy records.
-- Patient-condition relationships.
-- Patient-medication relationships.
-- Medication-ingredient relationships.
-- Dataset metadata.
+MediGraph AI 🏥
 
-All synthetic records are intended for software development and testing. They do not represent real patients or verified patient-specific clinical findings.
+Personalized Medical Knowledge Graph Platform
 
-⚙️ Getting Started
+MediGraph AI is a medical knowledge graph platform designed to connect and organize medical information in a structured, meaningful way. It brings together patients, medical conditions, allergies, medications, and ingredients to help users explore relationships within healthcare data.
 
-1. Clone the Repository
+The project aims to make complex medical information easier to understand through graph-based visualization and patient-specific analysis.
 
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd MEDIGRAPH
+🚀 Project Overview
 
-Replace "YOUR_GITHUB_REPOSITORY_URL" with the actual repository URL.
+Medical information is often stored in separate records, making it difficult to understand how different conditions, allergies, and medications relate to one another.
 
-2. Configure the Backend
+MediGraph AI addresses this challenge by representing medical entities as nodes and their connections as relationships in a knowledge graph. This structure allows users to explore connected information and understand relationships across medical records.
 
-Open the backend directory and install the dependencies listed in its requirements file.
+The platform is designed as a prototype for educational, research, and demonstration purposes.
 
-cd backend
-pip install -r requirements.txt
+✨ Key Features
 
-The exact requirements filename should match the file in the repository.
+- Medical Knowledge Graph: Represents medical entities and their relationships in a connected graph.
+- Patient Lookup: Designed to retrieve and explore patient-related information.
+- Patient Analysis: Supports exploring relevant medical information associated with a patient.
+- Condition Mapping: Connects patients with recorded medical conditions.
+- Allergy Tracking: Represents allergy information and its relationship to patient records.
+- Medication Mapping: Connects medication records with their ingredients.
+- Data Import: Supports a structured workflow for validating and importing medical datasets where implemented.
+- API Integration: Uses a backend API to connect the frontend with the database.
+- Data Validation: Helps identify missing references and inconsistencies in the dataset.
 
-3. Configure Neo4j Aura
+🧠 How Neo4j Is Used
 
-Create a local ".env" file in the backend directory and configure the required database variables:
+Neo4j is a graph database that stores information as nodes, relationships, and properties.
 
-NEO4J_URI=your_neo4j_connection_uri
-NEO4J_USERNAME=your_neo4j_username
-NEO4J_PASSWORD=your_neo4j_password
-NEO4J_DATABASE=neo4j
+In MediGraph AI, the intended graph model includes entities such as:
 
-Use the actual values provided by your Neo4j Aura instance. Never commit real credentials to GitHub.
+- Patient — a patient record.
+- Condition — a medical condition.
+- Allergy — an allergy record.
+- Medication — a medication record.
+- Ingredient — an ingredient associated with a medication.
+- Source — information about a data source.
 
-4. Start the Backend
+Example relationships include:
 
-From the backend directory, run:
+- "HAS_CONDITION" — connects a patient to a recorded condition.
+- "HAS_ALLERGY" — connects a patient to an allergy record.
+- "TAKES" — connects a patient to a medication record.
+- "CONTAINS" — connects a medication to an ingredient.
 
-uvicorn app.main:app --reload
+These connections make it possible to explore relationships that may be harder to understand when data is stored only in separate tables.
 
-If the application uses a different Python module path, adjust the command to match the implementation.
+🏗️ Technology Stack
 
-When the server starts successfully, the API documentation is typically available at:
+Component| Technology
+Frontend| React and TypeScript, if used by the existing frontend
+Backend| Python and FastAPI
+Graph Database| Neo4j Aura
+Data Format| CSV and JSON
+Testing| Python testing tools
 
-http://127.0.0.1:8000/docs
+The final technology configuration depends on the implementation in the project repository.
 
-5. Run the Frontend
+📂 Project Structure
 
-Open a separate terminal, navigate to the frontend directory, install the dependencies, and start the development server using the scripts defined in "package.json".
+A typical project structure is:
 
-For example:
+MEDIGRAPH/
+├── frontend/
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── ingestion/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   └── main.py
+│   └── tests/
+└── data/
+    └── medical_dataset/
+        ├── patients.csv
+        ├── conditions.csv
+        ├── medications.csv
+        ├── allergies.csv
+        ├── patient_conditions.csv
+        ├── patient_medications.csv
+        ├── medication_ingredients.csv
+        ├── medical_sources.csv
+        ├── graph_import.json
+        ├── validate_dataset.py
+        ├── import_to_neo4j.py
+        └── README.md
 
-cd frontend
-npm install
-npm run dev
+The actual structure may vary depending on the files present in the repository.
 
-The actual commands depend on the frontend framework and configuration.
+📊 Dataset
 
-6. Validate the Dataset
+The project includes a synthetic demonstration dataset designed to test graph relationships and application workflows.
 
-Run the dataset validation script before importing the records into Neo4j. Confirm the file path and Python environment first.
-
-7. Import the Dataset
-
-Configure the Neo4j credentials locally, then use the project's import script if it has been tested and configured for the existing database schema. Verify the imported nodes and relationships in Neo4j Aura.
-
-🔐 Security and Privacy
-
-- Never upload ".env" files or database passwords to GitHub.
-- Keep database credentials on the backend.
-- Do not connect the frontend directly to Neo4j using database credentials.
-- Use synthetic records for public demonstrations.
-- Protect real patient information and follow applicable privacy requirements.
-- Validate uploaded files before importing them.
-
-⚠️ Medical Disclaimer
-
-MediGraph AI is an educational and demonstration prototype. It is not a medical device and does not replace qualified healthcare professionals.
-
-The presence of a relationship in a graph does not automatically establish a clinical conclusion. Medical findings and medication interactions must be supported by reliable clinical evidence and appropriate review.
-
-Do not use synthetic demonstration data to make real healthcare decisions.
-
-🔮 Future Improvements
-
-- Expand validated medical knowledge sources.
-- Improve graph exploration and filtering.
-- Add stronger dataset validation and import reports.
-- Improve evidence traceability for medical relationships.
-- Add authentication and access controls where needed.
-- Expand automated tests and integration monitoring.
-- Improve error handling and deployment documentation.
-
-👨‍💻 Project Purpose
-
-MediGraph AI explores how graph databases can organize connected medical information and make relationships easier to navigate. The project combines a frontend interface, a backend API, and a graph-based data model to demonstrate a possible approach to medical knowledge exploration.
-
----
-
-MediGraph AI — Connecting Medical Knowledge Through Graphs.
+The dataset may include:
