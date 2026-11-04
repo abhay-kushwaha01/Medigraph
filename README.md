@@ -1,4 +1,4 @@
-MediGraph AI 🏥  
+MediGraph AI 🏥     
 
 Personalized Medical Knowledge Graph Platform
 
