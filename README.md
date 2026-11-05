@@ -1,6 +1,6 @@
 MediGraph AI 🏥     
   
-Personalized Medical Knowledge Graph Platform
+Personalized Medical Knowledge Graph Platform    
 
 MediGraph AI is a medical knowledge graph platform designed to connect and organize medical information in a structured, meaningful way. It brings together patients, medical conditions, allergies, medications, and ingredients to help users explore relationships within healthcare data.
 
